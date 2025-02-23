@@ -4,9 +4,19 @@ body{
   .title {
       color: #5C6AC4;
   }
-   .comment {
+.comment {
               background-color: skyblue;
               border: 2px solid rgba(0, 0, 255, 0.484);
               border-radius: 5px;
               padding: 5px;
           }
+.btn-primari{
+     border: 2px solid black;
+     padding: 10px;
+     border-radius: 10px;
+     background-color: rgb(239, 231, 221);
+     font-size: 1rem;
+     font-size: large;
+     font-weight: bold;
+     color: rgb(211, 70, 70);
+}

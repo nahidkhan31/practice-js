@@ -10,4 +10,7 @@ document.getElementById('post-comment').addEventListener('click', function(){
     
   })
   
-  
+document.getElementById('btn-name').addEventListener('click', function(){
+    const showName = document.getElementById('show-name');
+    showName.innerText="My name is Nahid Khan Niloy";
+})  
