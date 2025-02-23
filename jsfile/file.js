@@ -1,17 +1,13 @@
-// // step number 01
-// document.getElementById('btn-post-comment').addEventListener('click', function(){
+document.getElementById('post-comment').addEventListener('click', function(){
+    const commentTexBox = document.getElementById('comment-text-box');
+    const newComment = commentTexBox.value;
+    const commentContainer = document.getElementById('comments-container');
+    const newCommentElement = document.createElement('p');
+    newCommentElement.classList.add('comment')
+    newCommentElement.innerText=newComment;
+    commentContainer.appendChild(newCommentElement);
+    commentTexBox.value='';
     
-// // step number 02: get the text written in the comment text area
-// const commentTextBox = document.getElementById('comment-text-box');
-// const newComment= commentTextBox.value;
-
-// // step-03: get the parent node where to publish comment
-// const commentContainer= document.getElementById('comment-container');
-
-// // step-04: create a comment p and set the innerText
-// const  commentElement = document.createElement('p');
-// commentElement.innerText = newComment;
-
-// // step-05:  append the new p tag to the parent node
-// commentContainer.appendChild(commentElement);
-// })
+  })
+  
+  

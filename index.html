@@ -5,43 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <h1 class="text-3xl text-black font-bold">My awesome comment Box. Write what in your mind!!!</h1>
-  <section>
-    <h3 class="text-2xl font-bold">All comments here</h3>
-    <div id="comment-container">
-        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus vel, eveniet nostrum dolor consequatur fugit praesentium placeat maxime non!</p>
-        <p class="comment">Expedita, culpa saepe sint veniam dicta sed rerum ratione reiciendis eligendi iusto, dignissimos iure incidunt perferendis, impedit dolore quaerat similique!</p>
-        <p class="comment">Obcaecati saepe perferendis incidunt officia inventore consequuntur, deserunt omnis provident suscipit tempora ducimus aperiam non nulla labore voluptates, mollitia dicta.</p>
-    </div>
-   <form>
-    <textarea name="" id="comment-text-box" cols="60" rows="10"></textarea>
-    <br>
-    <button id="btn-post-comment">Post Comment</button>
-   </form>
-  </section>
-   <script>
-    // step number 01
-document.getElementById('btn-post-comment').addEventListener('click', function(){
-    
-    // step number 02: get the text written in the comment text area
-    const commentTextBox = document.getElementById('comment-text-box');
-    const newComment= commentTextBox.value;
-    
-    // step-03: get the parent node where to publish comment
-    const commentContainer= document.getElementById('comment-container');
-    
-    // step-04: create a comment p and set the innerText
-    const  commentElement = document.createElement('p');
-    commentElement.innerText = newComment;
-    
-    // step-05:  append the new p tag to the parent node
-    commentContainer.appendChild(commentElement);
-    })
-   </script>
+  <h2>All Comments here</h2>
+  <div id="comments-container">
+      <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita magnam magni ipsa corporis
+          temporibus officia. Quam praesentium beatae rem atque, corporis, ipsum laudantium illo nesciunt modi, quis
+          consequatur sit totam!</p>
+      <p class="comment">Eligendi blanditiis tempora fuga veritatis magnam saepe quibusdam dolorum ratione provident?
+          Animi dolores accusantium ullam laborum. Quod, deserunt itaque. Quisquam consequuntur nostrum doloribus iste
+          consectetur provident nulla voluptatum aliquid hic?</p>
+      <p class="comment">Harum quod laborum magnam ad autem molestiae aut fugiat, voluptatem vel sequi error, itaque,
+          et nam aspernatur! Sunt recusandae quod, quasi reprehenderit doloribus at accusamus cumque, in iusto minima
+          quas.</p>
+  </div>
+  <div>
+      <!-- <form> -->
+      <textarea name="" id="comment-text-box" cols="30" rows="10" id=""></textarea>
+      <br>
+      <button id="post-comment">post</button>
+      <!-- </form> -->
+  </div>
+   
   <script src="jsfile/file.js"></script>
 </body>
 </html>
